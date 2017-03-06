@@ -1,0 +1,2 @@
+{% load static %}
+<tr>{% ifequal item.model 'Fix' %}<td><img class="img-icon" src="{% static "img/fixed.png" %}" alt="fixed"></td>{% else %}<td><img src="{% static "img/movil.png" %}" alt="fixed"></td>{% endifequal %}<td>{{ item.number }}</td><td>{{ item.name }}</td><td>{{ item.address }}</td><td>{{ item.province_str }}</td></tr>
